@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+</head>
+<body style="background-color: darkkhaki;">
+<h1 style="color: forestgreen;"><b>Registration form for the course</b></h1>
+
+<img src="https://www.brain-mappers.com/images/0005/brain-mapper_24.jpg" alt="Brain Mapper" width="900px" height="300px" />
+
+<br/><br/>
+
+<form>
+    <b>Registration for new course</b><br/><br/>
+
+    <p>
+        <label>Parents first name:
+            <input type="text" name="parent_fname" placeholder="Please enter your first name..." size="22" autocomplete="off" required />
+        </label>
+    </p>
+
+    <p>
+        <label>Parents last name:
+            <input type="text" name="parent_lname" placeholder="Please enter your last name..." size="22" autocomplete="off" required />
+        </label>
+    </p>
+
+    <p>
+        <label>Child first name:
+            <input type="text" name="child_fname" placeholder="Please enter child's first name..." size="22" autocomplete="off" required />
+        </label>
+    </p>
+
+    <p>
+        <label>Child last name:
+            <input type="text" name="child_lname" placeholder="Please enter child's last name..." size="22" autocomplete="off" required />
+        </label>
+    </p>
+
+    <p>Gender:
+        <label><input type="radio" name="gender" value="Male"> Male</label>
+        <label><input type="radio" name="gender" value="Female"> Female</label>
+    </p>
+
+    <p>
+        <label>Child birthday:
+            <input type="date" name="birthday" required />
+        </label>
+    </p>
+
+    <p>
+        <label>Choose the course for the child:
+            <select name="course">
+                <option value="Speedcubing">Speedcubing</option>
+                <option value="Origami">Origami</option>
+                <option value="Mental arithmetic">Mental arithmetic</option>
+                <option value="Yoga">Yoga</option>
+            </select>
+        </label>
+    </p>
+
+    <p>Child's hobbies:</p>
+    <label><input type="checkbox" name="hobby" value="Painting"> Painting, creative, etc.</label><br>
+    <label><input type="checkbox" name="hobby" value="Sport"> Sport (football, volleyball, athletics, boxing, water polo, swimming)</label><br>
+    <label><input type="checkbox" name="hobby" value="TV show"> Watching TV &  playing computer games</label>
+</form>
+</body>
+</html>
