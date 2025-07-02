@@ -3,67 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body style="background-color: darkkhaki;">
-<h1 style="color: forestgreen;"><b>Registration form for the course</b></h1>
 
-<img src="https://www.brain-mappers.com/images/0005/brain-mapper_24.jpg" alt="Brain Mapper" width="900px" height="300px" />
+<body style="background-color: darkkhaki;">
+<div class ="header center">
+    <h1><b>Ознакомительная анкета </b></h1>
+</div>
+<img src="https://www.brain-mappers.com/images/0005/brain-mapper_24.jpg" alt="Brain Mapper" width="700px" height="200px" style="
+    padding-left: 150px; padding-top: 30px;
+">
 
 <br/><br/>
 
-<form>
-    <b>Registration for new course</b><br/><br/>
-
+<form class="list center">
     <p>
-        <label>Parents first name:
+        <label>Имя родителя
             <input type="text" name="parent_fname" placeholder="Please enter your first name..." size="22" autocomplete="off" required />
         </label>
     </p>
 
     <p>
-        <label>Parents last name:
+        <label>Фамилия родителя:
             <input type="text" name="parent_lname" placeholder="Please enter your last name..." size="22" autocomplete="off" required />
         </label>
     </p>
 
     <p>
-        <label>Child first name:
+        <label>Имя ребенка:
             <input type="text" name="child_fname" placeholder="Please enter child's first name..." size="22" autocomplete="off" required />
         </label>
     </p>
 
     <p>
-        <label>Child last name:
+        <label>Фамилия ребенка:
             <input type="text" name="child_lname" placeholder="Please enter child's last name..." size="22" autocomplete="off" required />
         </label>
     </p>
 
-    <p>Gender:
-        <label><input type="radio" name="gender" value="Male"> Male</label>
-        <label><input type="radio" name="gender" value="Female"> Female</label>
+    <p>Пол ребенка:
+        <label><input type="radio" name="gender" value="мужской"> мужской</label>
+        <label><input type="radio" name="gender" value="женский"> женский</label>
     </p>
 
     <p>
-        <label>Child birthday:
+        <label>Дата рождения ребенка:
             <input type="date" name="birthday" required />
         </label>
     </p>
 
     <p>
-        <label>Choose the course for the child:
+        <label>Выберете курс для вашего ребенка:
             <select name="course">
-                <option value="Speedcubing">Speedcubing</option>
-                <option value="Origami">Origami</option>
-                <option value="Mental arithmetic">Mental arithmetic</option>
-                <option value="Yoga">Yoga</option>
+                <option value="Скоростная сборка головоломок типа кубик рубика">Скоростная сборка головоломок типа кубик рубика</option>
+                <option value="Оригами">Оригами</option>
+                <option value="Менталиная арифметика">Менталиная арифметика</option>
+                <option value="Йога">Йога</option>
+                <option value="Скорочтение">Скорочтение</option>
+                <option value="Нейрофитнес и развитие межполушарных связей">Нейрофитнес и развитие межполушарных связей</option>
+                <option value="Мнемотехника">Мнемотехника</option>
+                <option value="Правополушарное рисование">Правополушарное рисование</option>
+                <option value="Подготовка к школе">Подготовка к школе</option>
             </select>
         </label>
     </p>
 
-    <p>Child's hobbies:</p>
-    <label><input type="checkbox" name="hobby" value="Painting"> Painting, creative, etc.</label><br>
-    <label><input type="checkbox" name="hobby" value="Sport"> Sport (football, volleyball, athletics, boxing, water polo, swimming)</label><br>
-    <label><input type="checkbox" name="hobby" value="TV show"> Watching TV &  playing computer games</label>
+    <p>Хобби и интересы ребенка:</p>
+    <label><input type="checkbox" name="hobby" value="Painting"> рисование, лепка, креативное творчество и т.п.</label><br>
+    <label><input type="checkbox" name="hobby" value="Sport"> спорт (футбол, плавание, бег, скалолазание, езда на велосипеде и т.п.)</label><br>
+    <label><input type="checkbox" name="hobby" value="TV show"> Компьютерные игры и просмотр телевизора</label>
+    <label><input type="checkbox" name="hobby" value="others"> другое<input type="text" name="other hobbies" placeholder="Please enter the hobby..." size="22" autocomplete="off"  /></label>
 </form>
 </body>
 </html>

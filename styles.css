@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body{
+    font-family: "Rubik", sans-serif;
+}
+.center {
+    text-align: center;
+}
+.list{
+    border-style: groove;
+    border-color: orange;
+    list-style-type: square;
+}
+.img{
+padding-left: 100px;
+}
+.header {
+    color: chocolate;
+    height:120px;
+    width:  100%;
+    background-image: url("images/brain-mapper_24.jpg");
+
+    background-size: cover; /* Важно для масштабирования */
+    background-position: center; /* Смещение фокуса вверх */
+    background-repeat: no-repeat; /* Предотвращаем повторение */
+    border-style: solid;
+    border-color: orange;
+    list-style-type: disc;
+}
+h1{
+    padding-top: 10px;
+    font-size: 48px;
+    align-content: center;
+}
+form>p{
+    font-size: 20px;
+    padding-left: 20px;
+}
+
